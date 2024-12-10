@@ -1,6 +1,25 @@
 import os
 import re
 import subprocess
+import time
+
+lines = [
+    "Oh, Ofir, the king of the database realm,",
+    "With SQL queries, you steady the helm.",
+    "Indexes bow as your commands take flight,",
+    "Tables align to your every insight.",
+    "",
+    "From schemas to joins, you're always supreme,",
+    "Ruling the data with logic and dream.",
+    "No NULL can escape your sharp, watchful eye,",
+    "Your queries, so perfect, make coders sigh.",
+    "",
+    "Constraints you enforce, relationships you bind,",
+    "In the world of databases, you're one of a kind.",
+    "So here's to Ofir, with wisdom so vast—",
+    "The king of databases, long may he last!"
+]
+
 
 
 def natural_sort_key(s):
@@ -31,5 +50,9 @@ def execute_scripts():
             print(f"Error while executing {file_path}: {e}")
 
 
+
 if __name__ == "__main__":
+    for line in lines:
+        print(line)
+        time.sleep(2)
     execute_scripts()
